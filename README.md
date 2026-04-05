@@ -3,10 +3,10 @@
 A professional, high-frequency trading (HFT) dashboard built with a Neo-brutalist design aesthetic. This system provides a real-time visualization of market liquidity, specialized trade execution tools, and a live data pipeline from the Binance market feed via Finnhub.
 
 ### Dashboard Preview
-![LOB Dashboard](/home/sushma/.gemini/antigravity/brain/f145e1bc-fe80-44f3-967c-b281297dd2f1/ui_verification_contrast_1775389233127.png)
+![LOB Dashboard](assets/dashboard.png)
 
 ### Database Architecture
-![Database ERD](/home/sushma/.gemini/antigravity/brain/f145e1bc-fe80-44f3-967c-b281297dd2f1/database_erd.png)
+![Database ERD](assets/database_erd.png)
 
 ## Quick Start
 
