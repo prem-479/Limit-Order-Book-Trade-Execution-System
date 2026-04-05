@@ -1,6 +1,6 @@
 # Limit Order Book & Trade Execution System 
 
-A professional, high-frequency trading (HFT) dashboard built with a Neo-brutalist design aesthetic. This system provides a real-time visualization of market liquidity, specialized trade execution tools, and a live data pipeline from the Binance market feed via Finnhub.
+A professional, high-frequency trading (HFT) dashboard. This system provides a real-time visualization of market liquidity, specialized trade execution tools, and a live data pipeline from the Binance market feed via Finnhub.
 
 ### Dashboard Preview
 ![LOB Dashboard](assets/dashboard.png)
