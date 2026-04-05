@@ -1,0 +1,287 @@
+/* ═══════════════════════════════════════════════
+   LOB & Trade Execution — Component Styles
+   Neo-Brutalism Design System
+   ═══════════════════════════════════════════════ */
+
+/* ── Aesthetic Textures ── */
+.bg-halftone {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── Status Indicator ── */
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000;
+  margin-right: 6px;
+}
+
+.status-dot--online {
+  background-color: #22c55e;
+}
+
+.status-dot--offline {
+  background-color: #FF6B6B;
+}
+
+/* ── Order Book Table ── */
+.orderbook-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 2px solid #000;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 14px;
+  user-select: none;
+}
+
+.orderbook-row:hover {
+  background-color: #FFD93D;
+}
+
+.orderbook-row--header {
+  background-color: #000;
+  color: #FFFDF5;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 4px solid #000;
+}
+
+.orderbook-row--header:hover {
+  background-color: #000;
+}
+
+.orderbook-row--ask {
+  color: #FF6B6B;
+}
+
+.orderbook-row--bid {
+  color: #16a34a;
+}
+
+/* ── Depth Bar (visual volume indicator) ── */
+.depth-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.12;
+  pointer-events: none;
+}
+.depth-bar--ask {
+  right: 0;
+  background-color: #FF6B6B;
+}
+.depth-bar--bid {
+  left: 0;
+  background-color: #22c55e;
+}
+
+/* ── Trade Tape Row ── */
+.tape-row {
+  display: grid;
+  grid-template-columns: 100px 140px 1fr 1fr;
+  border-bottom: 2px solid #000;
+  padding: 5px 12px;
+  font-weight: 700;
+  font-size: 13px;
+  user-select: none;
+}
+
+.tape-row:hover {
+  background-color: #C4B5FD;
+}
+
+.tape-row--header {
+  background-color: #000;
+  color: #FFFDF5;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 4px solid #000;
+}
+
+/* ── Metric Card ── */
+.metric-card {
+  background: #FFFFFF;
+  border: 4px solid #000;
+  padding: 16px 20px;
+  box-shadow: 4px 4px 0px 0px #000;
+  transition: transform 100ms ease-out, box-shadow 100ms ease-out;
+}
+
+.metric-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000;
+}
+
+.metric-card__label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.metric-card__value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;
+}
+
+.metric-card__value--accent {
+  color: #FF6B6B;
+}
+
+.metric-card__value--green {
+  color: #16a34a;
+}
+
+/* ── Panel ── */
+.panel {
+  background: #FFFFFF;
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel__header {
+  background: #000;
+  color: #FFFDF5;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 4px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.panel__header-icon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 3px;
+}
+
+.panel__body {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* ── Button (Neo-brutal) ── */
+.btn-neo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 4px solid #000;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px 0px #000;
+  transition: all 100ms active;
+}
+
+.btn-neo:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.btn-neo--primary {
+  background-color: #FF6B6B;
+}
+
+.btn-neo--execute {
+  background-color: #22c55e;
+}
+
+/* ── Badge ── */
+.badge-neo {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border: 3px solid #000;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  box-shadow: 2px 2px 0px 0px #000;
+}
+
+.badge-neo--live {
+  background-color: #22c55e;
+}
+
+.badge-neo--muted {
+  background-color: #C4B5FD;
+}
+
+/* ── Ticker Strip ── */
+.ticker-strip {
+  overflow: hidden;
+  background: #000;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  padding: 8px 0;
+  white-space: nowrap;
+}
+
+.ticker-strip__inner {
+  display: inline-flex;
+  gap: 48px;
+}
+
+.ticker-strip__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFDF5;
+  text-transform: uppercase;
+}
+
+.ticker-strip__separator {
+  color: #FFD93D;
+  font-weight: 900;
+}
+
+/* ── Spread Indicator ── */
+.spread-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #FFD93D;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  color: #000;
+}

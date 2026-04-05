@@ -1,0 +1,30 @@
+# Project Specifics
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# Dependencies
+node_modules/
+backend/venv/
+frontend/node_modules/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build artifacts
+frontend/dist/
+dist/
+build/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
