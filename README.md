@@ -8,6 +8,8 @@ A professional, high-frequency trading (HFT) dashboard built with a Neo-brutalis
 ### Database Architecture
 ![Database ERD](assets/database_erd.png)
 
+[View Interactive ERD on dbdiagram.io](https://dbdiagram.io/d/Limit-Order-Book-and-Trade-Execution-System-69d2531f0f7c9ef2c08090ca)
+
 ## Quick Start
 
 ### 1. Prerequisites
